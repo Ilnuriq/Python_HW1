@@ -10,7 +10,6 @@ if n >= 1000 or n < 100:
 
 summa = 0
 while n >= 1:
-    a = n % 10
-    summa = summa + a
-    n = n // 10
+    summa *= n % 10
+    n //= 10
 print (f'Сумма чисел равна: {summa}')
